@@ -11,10 +11,10 @@ namespace Example702
 
 
             //Desktop.MultOrSum();
-            //Desktop.LeapYear(20,1907);
+            Desktop.LeapYear(20,1907);
             //Desktop.ListInBox(list);
 
-            string text = "This Program Created Arsen Dashyan";
+            //string text = "This Program Created Arsen Dashyan";
             //Desktop.AddEy(text);
 
             Console.ReadLine();

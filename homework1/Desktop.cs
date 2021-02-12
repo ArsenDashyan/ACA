@@ -48,20 +48,29 @@ namespace Example702
 
         public static void LeapYear(int count, int start)
         {
-            if ((start - 2000) % 4 == 0)
+            DateTime date = new DateTime(start, 12, 31);
+            if (date.DayOfYear == 366)
             {
-                for (int i = 0; i < count; i++)
-                {
-                    Console.WriteLine($"{start + 4 * i} is a Leap Year");
-                }
+                PrintLeapYears(count,start);
             }
             else
             {
-                int sum = 4 - (start - 2000) % 4;
-                for (int i = 0; i < count; i++)
+                for (int i = 1; i < 4; i++)
                 {
-                    Console.WriteLine($"{(start + sum) + 4 * i} is a Leap Year");
+                    date = date.AddYears(i);
+                    if (date.DayOfYear == 366)
+                    {
+                        PrintLeapYears(count, start);
+                    }
                 }
+            }
+        }
+
+        private static void PrintLeapYears(int count, int start)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                Console.WriteLine($"{start + 4 * i} is a Leap Year");
             }
         }
 
