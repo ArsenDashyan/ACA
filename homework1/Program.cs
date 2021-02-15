@@ -7,12 +7,12 @@ namespace Example702
     {
         static void Main(string[] args)
         {
-            List<string> list = new List<string>() { "Hello", "Armenia", "in", "the", "box","ghggggggggggg","aghhg","a","ah","ahha" };
+            List<string> list = new List<string>() { "Hello", "Armenia", "in", "the", "box","ghggggggggggg","aghhg","a","ah","ahha","adad","s" };
 
 
             //Desktop.MultOrSum();
-            Desktop.LeapYear(20,1907);
-            //Desktop.ListInBox(list);
+            //Desktop.LeapYear(20,1907);
+            Desktop.ListInBox(list);
 
             //string text = "This Program Created Arsen Dashyan";
             //Desktop.AddEy(text);
